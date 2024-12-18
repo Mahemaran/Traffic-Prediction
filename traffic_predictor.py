@@ -9,7 +9,7 @@ with open("Traffic_prediction.pickle", 'rb') as f:
 # Streamlit app layout
 st.set_page_config(page_title="Traffic Prediction", page_icon="🚦", layout="centered")
 st.title("Traffic Prediction App")
-st.write("Enter the input features below to predict whether the traffic is low or high.")
+st.write("Enter the input features below to predict whether the traffic is low, Normal, high or heavy.")
 
 # Collect user input for the counts
 car_count = st.number_input("**Car Count**", min_value=0, value=100)
